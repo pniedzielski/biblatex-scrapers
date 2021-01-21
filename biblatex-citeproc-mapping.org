@@ -1,0 +1,335 @@
+| BibLaTeX field  | Citeproc field    | Notes              |
+|-----------------+-------------------+--------------------|
+| abstract        | abstract          |                    |
+| addendum        |                   |                    |
+| afterword       |                   |                    |
+| annotation      | annote            |                    |
+| annotator       |                   |                    |
+| author          | author            |                    |
+| authortype      |                   |                    |
+| bookauthor      | container-author  | iff inbook         |
+| bookpagination  |                   |                    |
+| booksubtitle    |                   |                    |
+| booktitle       | container-title   | iff inbook         |
+| booktitleaddon  |                   |                    |
+| chapter         | chapter-number    |                    |
+| commentator     |                   |                    |
+| date            | issued            |                    |
+| doi             | DOI               |                    |
+| edition         | edition           |                    |
+| editor          | editor            |                    |
+| editora         |                   |                    |
+| editorb         |                   |                    |
+| editorc         |                   |                    |
+| editortype      |                   |                    |
+| editoratype     |                   |                    |
+| editorbtype     |                   |                    |
+| editorctype     |                   |                    |
+| eid             |                   |                    |
+| eprint          |                   |                    |
+| eprintclass     |                   |                    |
+| eprinttype      |                   |                    |
+| eventdate       | event-date        |                    |
+| eventtitle      | event             |                    |
+| file            |                   |                    |
+| foreward        |                   |                    |
+| holder          |                   |                    |
+| howpublished    |                   |                    |
+| indextitle      |                   |                    |
+| institution     |                   |                    |
+| introduction    |                   |                    |
+| isan            |                   |                    |
+| isbn            | ISBN              |                    |
+| ismn            |                   |                    |
+| isrn            |                   |                    |
+| issn            | ISSN              |                    |
+| issue           |                   |                    |
+| issuesubtitle   |                   |                    |
+| issuetitle      |                   |                    |
+| iswc            |                   |                    |
+| journalsubtitle |                   |                    |
+| journaltitle    |                   |                    |
+| label           |                   |                    |
+| language        | language          | check this         |
+| library         |                   |                    |
+| location        | publisher-place   |                    |
+| mainsubtitle    |                   |                    |
+| maintitle       |                   |                    |
+| maintitleaddon  |                   |                    |
+| month           |                   |                    |
+| nameaddon       |                   |                    |
+| note            | note              |                    |
+| number          | issue             | iff article        |
+| organization    |                   |                    |
+| origdate        |                   |                    |
+| origlanguage    |                   |                    |
+| origlocation    |                   |                    |
+| origpublisher   |                   |                    |
+| origtitle       |                   |                    |
+| pages           |                   |                    |
+| pagetotal       | number-of-pages   |                    |
+| pagination      |                   |                    |
+| part            |                   |                    |
+| publisher       | publisher         |                    |
+| pubstate        | status            | check these        |
+| reprinttitle    |                   |                    |
+| series          | collection-title  | iff book           |
+| shortauthor     |                   |                    |
+| shorteditor     |                   |                    |
+| shorthand       |                   |                    |
+| shorthandintro  |                   |                    |
+| shortjournal    |                   |                    |
+| shortseries     |                   |                    |
+| shorttitle      | titleshort        |                    |
+| subtitle        | subtitle          |                    |
+| title           | title             |                    |
+| titleaddon      |                   |                    |
+| translator      | translator        |                    |
+| type            |                   |                    |
+| url             | link[0].URL       |                    |
+| urldate         | accessed          |                    |
+| venue           | event-place       |                    |
+| version         | version           |                    |
+| volume          | volume            |                    |
+| volumes         | number-of-volumes |                    |
+| year            |                   | use ~date~ instead |
+|-----------------+-------------------+--------------------|
+| crossref        |                   |                    |
+| entryset        |                   |                    |
+| entrysubtitle   |                   |                    |
+| execute         |                   |                    |
+| gender          |                   |                    |
+| hyphenation     |                   |                    |
+| indexsorttitle  |                   |                    |
+| indextitle      |                   |                    |
+| keywords        |                   |                    |
+| options         |                   |                    |
+| presort         |                   |                    |
+| sortkey         |                   |                    |
+| sortname        |                   |                    |
+| sortshorthand   |                   |                    |
+| sorttitle       |                   |                    |
+| sortyear        |                   |                    |
+| xdata           |                   |                    |
+| xref            |                   |                    |
+|-----------------+-------------------+--------------------|
+| namea           |                   |                    |
+| nameb           |                   |                    |
+| namec           |                   |                    |
+| nameatype       |                   |                    |
+| namebtype       |                   |                    |
+| namectype       |                   |                    |
+| lista           |                   |                    |
+| listb           |                   |                    |
+| listc           |                   |                    |
+| listd           |                   |                    |
+| liste           |                   |                    |
+| listf           |                   |                    |
+| usera           |                   |                    |
+| userb           |                   |                    |
+| userc           |                   |                    |
+| userd           |                   |                    |
+| usere           |                   |                    |
+| userf           |                   |                    |
+| verba           |                   |                    |
+| verbb           |                   |                    |
+| verbc           |                   |                    |
+
+* article
+  Required:
+  - author :: author
+  - title :: title
+  - journaltitle :: container-title
+  - date :: issued
+
+  Optional:
+  - translator :: translator
+  - annotator
+  - commentator
+  - subtitle
+  - titleaddon
+  - editor :: editor
+  - editora
+  - editorb
+  - editorc
+  - journalsubtitle
+  - issuetitle
+  - issuesubtitle
+  - language :: language
+  - origlanguage
+  - series :: collection-title
+  - volume :: volume
+  - number :: issue
+  - eid
+  - issue
+  - month
+  - pages :: page
+  - version :: version
+  - note :: extra
+  - issn :: ISSN
+  - addendum
+  - pubstate :: status
+  - doi :: DOI
+  - eprint
+  - eprintclass
+  - eprinttype
+  - url :: link[0].URL
+  - urldate :: accessed
+
+  Other:
+  - abstract :: abstract
+  - shortjournal :: container-title-short
+
+* book
+  Required:
+  - author :: author
+  - title :: title
+  - date :: issued
+
+  Optional:
+  - editor :: editor
+  - editora
+  - editorb
+  - editorc
+  - translator :: translator
+  - annotator
+  - commentator
+  - introduction
+  - foreword
+  - afterword
+  - subtitle :: subtitle
+  - titleaddon
+  - maintitle
+  - mainsubtitle
+  - maintitleaddon
+  - language :: language
+  - origlanguage
+  - volume :: volume
+  - part
+  - edition :: edition
+  - volumes :: number-of-volumes
+  - series :: collection-title
+  - number :: collection-number
+  - note :: note
+  - publisher :: publisher
+  - location :: publisher-place
+  - isbn :: ISBN
+  - chapter
+  - pages
+  - pagetotal :: number-of-pages
+  - addendum
+  - pubstate :: status
+  - doi :: Doi
+  - eprint
+  - eprintclass
+  - eprinttype
+  - url :: link[0].URL
+  - urldate :: accessed
+
+  Other:
+  - abstract :: abstract
+  - library :: archive     or source?
+  - shorttitle :: title-short
+
+* mvbook
+  Not sure
+
+* inbook
+
+* bookinbook
+
+* suppbook
+
+* booklet
+
+* collection
+
+* mvcollection
+
+* incollection
+  Required:
+  - author :: author
+  - editor :: editor
+  - title :: title
+  - booktitle :: container-title
+  - date :: issued
+
+  Optional:
+  - editora
+  - editorb
+  - editorc
+  - translator :: translator
+  - annotator
+  - commentator
+  - introduction
+  - foreword
+  - afterword
+  - subtitle :: subtitle
+  - titleaddon
+  - maintitle
+  - mainsubtitle
+  - maintitleaddon
+  - booksubtitle
+  - booktitleaddon
+  - language :: language
+  - origlanguage
+  - volume
+  - part
+  - edition
+  - volumes
+  - series
+  - number
+  - note
+  - publisher :: publisher
+  - location :: publisher-location
+  - isbn :: ISBN
+  - chapter
+  - pages :: page
+  - addendum
+  - pubstate
+  - doi :: DOI
+  - eprint
+  - eprintclass
+  - eprinttype
+  - url :: link[0].URL
+  - urldate :: 
+
+  Other:
+  - issn :: ISSN
+* suppcollection
+
+* manual
+
+* misc
+
+* online
+
+* patent
+
+* periodical
+
+* suppperiodical
+
+* proceedings
+
+* mvproceedings
+
+* inproceedings
+
+* reference
+
+* mvreference
+
+* inreference
+
+* report
+
+* set
+
+* thesis
+
+* unpublished
+
+* xdata
+
+* custom[a-f]
